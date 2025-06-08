@@ -1,0 +1,1 @@
+Get-ADUser -Identity "Testusername1" -Properties memberof | Select-Object -ExpandPropety memberof | Add-ADGroupMember -Members "TestUsernmae2"
