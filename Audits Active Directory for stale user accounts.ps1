@@ -1,16 +1,13 @@
 #Audits Active Directory for stale user accounts that have not been logged into for a specified number of days.
 
-.DESCRIPTION
-    This script queries Active Directory for all enabled user accounts and checks their lastLogonTimestamp attribute.
-    If a user has not logged on within the specified timeframe, their information is exported to a CSV file for review.
+#DESCRIPTION: This script queries Active Directory for all enabled user accounts and checks their lastLogonTimestamp attribute.
+#If a user has not logged on within the specified timeframe, their information is exported to a CSV file for review.
 
-.PARAMETER DaysInactive
-    The maximum number of days a user can be inactive before being flagged as stale. Default is 90 days.
+#PARAMETER DaysInactive
+#The maximum number of days a user can be inactive before being flagged as stale. Default is 90 days.
 
-.EXAMPLE
-    .\Get-StaleADUsers.ps1 -DaysInactive 90
-#
-
+#EXAMPLE
+#\Get-StaleADUsers.ps1 -DaysInactive 90
 
 param (
     [int]$DaysInactive = 90
