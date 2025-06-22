@@ -1,15 +1,11 @@
-<#
-.SYNOPSIS
-    Audits and reports on the membership of highly privileged administrative roles in Azure Active Directory.
+#Audits and reports on the membership of highly privileged administrative roles in Azure Active Directory.
 
-.DESCRIPTION
-    This script identifies key administrative roles (e.g., Global Administrator, Security Administrator) and lists the users assigned to them.
-    It helps in regularly reviewing who has powerful permissions within the Azure AD tenant, which is a key security practice.
+#DESCRIPTION:This script identifies key administrative roles (e.g., Global Administrator, Security Administrator) and lists the users assigned to them.
+#It helps in regularly reviewing who has powerful permissions within the Azure AD tenant, which is a key security practice.
 
-.EXAMPLE
-    .\Get-AzureAD_PrivilegedRoleMembers.ps1
-    Connects to Azure AD and exports a list of privileged role members to C:\temp\AzureAD_PrivilegedRoles_Report.csv.
-#>
+#EXAMPLE
+#.\Get-AzureAD_PrivilegedRoleMembers.ps1
+#Connects to Azure AD and exports a list of privileged role members to C:\temp\AzureAD_PrivilegedRoles_Report.csv.
 
 #Requires -Module AzureAD
 
